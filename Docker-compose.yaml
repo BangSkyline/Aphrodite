@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  dashboard:
+    image: aphrodite:latest
+    container_name: aphrodite
+    restart: unless-stopped
+    ports:
+      - "88:88"  # hôte:conteneur
+    networks:
+      cosmos:
+        ipv4_address: 192.168.95.35
+
+networks:
+  cosmos:
+    external: true
+    name: cosmos

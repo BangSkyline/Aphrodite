@@ -1,0 +1,128 @@
+/* Cosmos Dashboard Styles */
+.cosmos-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Animated starfield */
+.stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 
+    178px 814px #fff, 1002px 1054px #fff, 1141px 1555px #fff, 254px 787px #fff,
+    1593px 1032px #fff, 1466px 1473px #fff, 736px 1039px #fff, 1516px 1516px #fff,
+    1212px 845px #fff, 1288px 1240px #fff, 595px 1726px #fff, 1435px 1549px #fff,
+    897px 1710px #fff, 1746px 1295px #fff, 1456px 905px #fff, 1555px 1213px #fff,
+    324px 1500px #fff, 1038px 1726px #fff, 1155px 1676px #fff, 1287px 1705px #fff;
+  animation: animStar 50s linear infinite;
+}
+
+.stars:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 
+    178px 814px #fff, 1002px 1054px #fff, 1141px 1555px #fff, 254px 787px #fff,
+    1593px 1032px #fff, 1466px 1473px #fff, 736px 1039px #fff, 1516px 1516px #fff,
+    1212px 845px #fff, 1288px 1240px #fff, 595px 1726px #fff, 1435px 1549px #fff,
+    897px 1710px #fff, 1746px 1295px #fff, 1456px 905px #fff, 1555px 1213px #fff,
+    324px 1500px #fff, 1038px 1726px #fff, 1155px 1676px #fff, 1287px 1705px #fff;
+}
+
+.stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 
+    679px 1506px #fff, 1346px 389px #fff, 1495px 959px #fff, 861px 1264px #fff,
+    508px 1513px #fff, 1092px 1241px #fff, 1654px 226px #fff, 1869px 1346px #fff,
+    1400px 1729px #fff, 1726px 1654px #fff, 1240px 1240px #fff, 708px 1654px #fff,
+    1799px 1240px #fff, 1869px 226px #fff, 1726px 959px #fff, 1240px 389px #fff;
+  animation: animStar 100s linear infinite;
+}
+
+.stars2:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 
+    679px 1506px #fff, 1346px 389px #fff, 1495px 959px #fff, 861px 1264px #fff,
+    508px 1513px #fff, 1092px 1241px #fff, 1654px 226px #fff, 1869px 1346px #fff,
+    1400px 1729px #fff, 1726px 1654px #fff, 1240px 1240px #fff, 708px 1654px #fff,
+    1799px 1240px #fff, 1869px 226px #fff, 1726px 959px #fff, 1240px 389px #fff;
+}
+
+.stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 
+    1446px 1240px #fff, 861px 1506px #fff, 1799px 1346px #fff, 1495px 226px #fff,
+    1654px 1654px #fff, 1092px 959px #fff, 679px 389px #fff, 1869px 1513px #fff,
+    508px 1241px #fff, 1726px 1264px #fff, 1400px 1039px #fff, 1240px 1729px #fff;
+  animation: animStar 150s linear infinite;
+}
+
+.stars3:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 
+    1446px 1240px #fff, 861px 1506px #fff, 1799px 1346px #fff, 1495px 226px #fff,
+    1654px 1654px #fff, 1092px 959px #fff, 679px 389px #fff, 1869px 1513px #fff,
+    508px 1241px #fff, 1726px 1264px #fff, 1400px 1039px #fff, 1240px 1729px #fff;
+}
+
+@keyframes animStar {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-2000px); }
+}
+
+/* Radial gradient utility */
+.bg-gradient-radial {
+  background: radial-gradient(var(--tw-gradient-stops));
+}
+
+/* Smooth transitions for all interactive elements */
+.transition-cosmic {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Glow effects */
+.glow {
+  filter: drop-shadow(0 0 10px currentColor);
+}
+
+.glow-strong {
+  filter: drop-shadow(0 0 20px currentColor);
+}
+
+/* Custom scrollbar for space theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(147, 51, 234, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(147, 51, 234, 0.8);
+}
